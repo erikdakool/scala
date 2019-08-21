@@ -15,9 +15,33 @@ object assignments extends App{
   //assignment 3
   val sarr = Array("Han","Luke","Leia")
   def func3(array: Array[String]):String = {
-    ""
+    var ret = ""
+    sarr.mkString.toCharArray.foreach((arg:Char) => if(arg.isUpper)ret += arg)
+    ret;
   }
-  println(sarr.mkString)
+  println(func3(sarr))
+
+  //assignment 4
+  val narr = Array(1,2,3,4,5)
+
+  def func4(array: Array[Int]):Int = {
+    if(array.length == 1) return array(0)
+      return array(0)+func4(array.slice(1,array.length))
+  }
+  println(func4(narr))
+
+  //assignment 6
+  val a = List(10,1,2,5)
+  def evenNumber(x:Int):Boolean = {
+    if(x % 2 == 0) true
+    else false
+  }
+  var b = a.filter(evenNumber)
+  println(b.mkString)
+
+  //assignment 7
+  var c = a.filter((x:Int)=>x%2==0)
+  println(c.mkString)
 }
 
 
