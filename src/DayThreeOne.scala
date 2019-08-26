@@ -81,6 +81,7 @@ object DayThreeOne extends App{
 
   def sum(a:Int,b:Int,c:Int):Int = {
     println(sum(1,2,3));
+    sum(1,2,3)
   }
 
   def b:Int => Int=sum(3,_:Int,6);
@@ -90,7 +91,7 @@ object DayThreeOne extends App{
     a+b+c
   } 
 
-  def multiplyTwo: (Double,Double)=> multiply(_:Double,_:Double,1);
+  def multiplyTwo: (Double,Double) => Double=multiply(_:Double,_:Double,1);
   multiply(3,2,1);
   multiplyTwo(3,2);
 

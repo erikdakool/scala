@@ -15,12 +15,13 @@ object SudokoPuzzle extends App {
     def setValue(solution:Int):Square = {
       return new Square(this.box,this.x,this.y, List(solution),true)
     }
-    def removeValue(wrongSolution:Int):Square = {
-      val newList = possibleValues.filter(_!= wrongSolution)
-      if(newList.length == 1) {
-        return new Square(this.box,this.x,this.y,newList,true);
+
+    def removeValue(wrongSolution:Int):Square  ={
+      val newlist = possibleValues.filter(_ != wrongSolution);
+      if(newlist.length==1){
+        return new Square(this.box,this.x,this.y,newlist,solved=true);
       }
-      return new Square(this.box,this.x,this.y,newList,false);
+      return new Square(this.box,this.x,this.y,newlist);
     }
   }
 
@@ -51,15 +52,15 @@ object SudokoPuzzle extends App {
 
   //println(allSquares)
   def getAllFromX(i:Int):List[Square] = {
-    return allSquares.filter((s:Square)=>s.x==i);
+    return allSquares.filter(_.x == i);
   }
 
   def getAllFromY(i:Int):List[Square] = {
-    return allSquares.filter((s:Square)=>s.y == i)
+    return allSquares.filter(_.y == i)
   }
 
   def getAllFromBox(i:Int):List[Square] = {
-    return allSquares.filter((s:Square)=>s.box == i);
+    return allSquares.filter(_.box == i);
   }
 
   def getSquare(x:Int,y:Int):Square = {
@@ -92,15 +93,13 @@ object SudokoPuzzle extends App {
 
 
   def printIt() ={
-    var output:String = ""
     for(y<-List(1,2,3,4)){
       for(x<- List(1,2,3,4)){
         var s = getSquare(x,y);
-        output += s.possibleValues + "\t" + "\t"
+        print(s.possibleValues)
       }
-      output += "\n"
+      println("")
     }
-    print(output)
   }
 
   def printSolution() = {
@@ -120,10 +119,10 @@ object SudokoPuzzle extends App {
   printSolution()
 
   def isValid(x:Int,y:Int,solution:Int):Boolean = {
-    for(s<-getAllFromY(x):::getAllFromY(y):::getAllFromBox(getBoxFromXY(x,y))){
-      var oneSquare = s.asInstanceOf[Square];
+    for(s<-getAllFromX(x):::getAllFromY(y):::getAllFromBox(getBoxFromXY(x,y))){
+      val oneSquare = s.asInstanceOf[Square];
       if(x!= oneSquare.x || y!=oneSquare.y){
-        if(oneSquare.isSolved && oneSquare.possibleValues(0) == solution){
+        if(oneSquare.isSolved == true && oneSquare.possibleValues(0) == solution){
           println("Has solution " + oneSquare.x,oneSquare.y,oneSquare.possibleValues)
           return false;
         }
@@ -133,7 +132,7 @@ object SudokoPuzzle extends App {
   }
 
   def removeIfNotValid(x:Int,y:Int,solution:Int) ={
-    if(isValid(x,y,solution)){
+    if(!isValid(x,y,solution)){
       println("Removing" , x,y,solution);
       removeValue(x,y,solution);
     }

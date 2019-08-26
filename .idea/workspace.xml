@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0f1ac23-40e9-4918-b3a3-423dc83cc951" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DayTwoOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/DayTwoOne.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle1" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle1" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DayThreeOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/DayThreeOne.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokoPuzzle.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokoPuzzle.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +31,6 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1009" />
   </component>
   <component name="ProjectId" id="1PkN7nKMi2H10r8Wn0GcYKW9CSB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
