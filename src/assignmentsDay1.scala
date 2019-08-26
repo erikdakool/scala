@@ -1,4 +1,4 @@
-object assignments extends App{
+object assignmentsDay1 extends App{
   //assignment 1
   def func1(array: Array[Int]):Double ={
     return array.sum/array.length

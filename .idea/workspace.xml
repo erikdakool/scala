@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0f1ac23-40e9-4918-b3a3-423dc83cc951" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle1" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Input/puzzle2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle1" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScalaIntensiveWeek/Output/puzzle2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DayThreeOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/DayThreeOne.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SudokoPuzzle.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokoPuzzle.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignments.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignmentsDay1.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +56,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SudokoPuzzle">
+  <component name="RunManager" selected="Application.AssignmentsDayTwo">
+    <configuration name="AssignmentsDayTwo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="AssignmentsDayTwo" />
+      <module name="ScalaIntensiveWeek" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DayThreeOne" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="DayThreeOne" />
       <module name="ScalaIntensiveWeek" />
@@ -76,14 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunApp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="RunApp" />
-      <module name="ScalaIntensiveWeek" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SudokoPuzzle" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SudokoPuzzle" />
       <module name="ScalaIntensiveWeek" />
@@ -92,7 +86,7 @@
       </method>
     </configuration>
     <configuration name="assignments" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="assignments" />
+      <option name="MAIN_CLASS_NAME" value="assignmentsDay1" />
       <module name="ScalaIntensiveWeek" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,18 +94,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.assignments" />
-      <item itemvalue="Application.RunApp" />
       <item itemvalue="Application.DayTwoOne" />
       <item itemvalue="Application.DayThreeOne" />
       <item itemvalue="Application.SudokoPuzzle" />
+      <item itemvalue="Application.AssignmentsDayTwo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AssignmentsDayTwo" />
         <item itemvalue="Application.SudokoPuzzle" />
         <item itemvalue="Application.DayThreeOne" />
         <item itemvalue="Application.DayTwoOne" />
         <item itemvalue="Application.assignments" />
-        <item itemvalue="Application.RunApp" />
       </list>
     </recent_temporary>
   </component>
