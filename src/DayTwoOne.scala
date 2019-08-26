@@ -33,6 +33,7 @@ object DayTwoOne extends App{
     val x = xNumber;
     val y = yNumber;
     val box = boxNumber;
+    val isSolved = solved;
 
     override def toString() = {
       "x" + x + " y" + y + " box" + box + " " +possibleValues.mkString(",") + "\n"
@@ -43,6 +44,9 @@ object DayTwoOne extends App{
     }
     def removeValue(wrongSolution:Int):Square = {
       val newList = possibleValues.filter(_!= wrongSolution)
+      if(newList.length == 1) {
+        return new Square(this.box,this.x,this.y,newList,true);
+      }
       return new Square(this.box,this.x,this.y,newList,false);
     }
   }
