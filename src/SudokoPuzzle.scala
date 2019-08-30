@@ -23,6 +23,14 @@ object SudokoPuzzle extends App {
       }
       return new Square(this.box,this.x,this.y,newlist);
     }
+
+    def getCorrectValue():Int = {
+      if(this.isSolved){
+        return this.possibleValues(0)
+      }else{
+        return 0;
+      }
+    }
   }
 
   /*  implicit def squreWrong(x:Int):Square = {
@@ -115,9 +123,6 @@ object SudokoPuzzle extends App {
     print(output)
   }
 
-  printIt()
-  printSolution()
-
   def isValid(x:Int,y:Int,solution:Int):Boolean = {
     for(s<-getAllFromX(x):::getAllFromY(y):::getAllFromBox(getBoxFromXY(x,y))){
       val oneSquare = s.asInstanceOf[Square];
@@ -137,6 +142,41 @@ object SudokoPuzzle extends App {
       removeValue(x,y,solution);
     }
   }
+
+  printIt()
+  printSolution()
+
+  //Pattern matching
+  def patternMatching(s1:Int,s2:Int,s3:Int,s4:Int):Int ={
+    val l = List(s1,s2,s3).sortWith(_<_);
+    return l match {
+      case List(1,2,3) =>4;
+      case List(1,2,4) =>3;
+      case List(1,3,4) =>2;
+      case List(2,3,4) =>1;
+      case List(_,_,_) =>s4;
+    }
+  }
+
+  def updateAllX(): Unit ={
+    for(x<-List(1,2,3,4)){
+      for(y<-List(1,2,3,4)){
+        val l = List(1,2,3,4).filter(_!=y);
+        var res = patternMatching(
+          getSquare(x,l(0)).getCorrectValue(),
+          getSquare(x,l(1)).getCorrectValue(),
+          getSquare(x,l(2)).getCorrectValue(),
+          getSquare(x,y).getCorrectValue()
+        );
+        if(res>0){
+          setValue(x,y,res);
+        }
+      }
+    }
+  }
+  println(updateAllX())
+  printSolution();
+
 
   //actual brute force
   for(x<-List(1,2,3,4)){

@@ -1,4 +1,4 @@
-object AssignmentsDayTwo extends App {
+object AssignmentsDay3 extends App {
   //Assignment 1
   var translations = Map[String,String]("Hei"->"Hi", "Ja"->"Yes","No"->"Nei");
   def translate(in:String):String = {

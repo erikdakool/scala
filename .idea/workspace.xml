@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0f1ac23-40e9-4918-b3a3-423dc83cc951" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignments.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignmentsDay1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssignmentsDayTwo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentsDay3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokoPuzzle.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/SudokoPuzzle.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,23 +57,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AssignmentsDayTwo">
-    <configuration name="AssignmentsDayTwo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="AssignmentsDayTwo" />
+  <component name="RunManager" selected="Application.DayFiveOne">
+    <configuration name="DayFiveOne" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DayFiveOne" />
       <module name="ScalaIntensiveWeek" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayThreeOne" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="DayThreeOne" />
+    <configuration name="DayFourOne" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DayFourOne" />
       <module name="ScalaIntensiveWeek" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayTwoOne" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="DayTwoOne" />
+    <configuration name="RunApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="RunApp" />
       <module name="ScalaIntensiveWeek" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assignments" type="Application" factoryName="Application" temporary="true">
+    <configuration name="assignmentsDay1" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="assignmentsDay1" />
       <module name="ScalaIntensiveWeek" />
       <method v="2">
@@ -93,19 +94,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.assignments" />
-      <item itemvalue="Application.DayTwoOne" />
-      <item itemvalue="Application.DayThreeOne" />
       <item itemvalue="Application.SudokoPuzzle" />
-      <item itemvalue="Application.AssignmentsDayTwo" />
+      <item itemvalue="Application.DayFourOne" />
+      <item itemvalue="Application.assignmentsDay1" />
+      <item itemvalue="Application.RunApp" />
+      <item itemvalue="Application.DayFiveOne" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AssignmentsDayTwo" />
+        <item itemvalue="Application.DayFiveOne" />
+        <item itemvalue="Application.RunApp" />
+        <item itemvalue="Application.assignmentsDay1" />
         <item itemvalue="Application.SudokoPuzzle" />
-        <item itemvalue="Application.DayThreeOne" />
-        <item itemvalue="Application.DayTwoOne" />
-        <item itemvalue="Application.assignments" />
+        <item itemvalue="Application.DayFourOne" />
       </list>
     </recent_temporary>
   </component>
